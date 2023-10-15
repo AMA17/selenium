@@ -11,7 +11,7 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import static java.lang.Thread.sleep;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-public class applicationСardTest {
+public class ApplicationСardTest {
     private WebDriver driver;
 
     @BeforeAll
@@ -20,7 +20,7 @@ public class applicationСardTest {
     }
 
     @BeforeEach
-    public void BeforeEach() {
+    public void beforeEach() {
         ChromeOptions options = new ChromeOptions();
         options.addArguments("--disable-dev-shm-usage");
         options.addArguments("--no-sandbox");
@@ -30,7 +30,7 @@ public class applicationСardTest {
     }
 
     @AfterEach
-    public void AfterEach() {
+    public void afterEach() {
         driver.quit();
         driver = null;
     }
